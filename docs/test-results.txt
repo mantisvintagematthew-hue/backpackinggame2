@@ -1,148 +1,32 @@
-Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
-
-[   0% ] first_scan_filesystem | Started Project initialization (5 steps)
-[   0% ] first_scan_filesystem | Scanning file structure...
-[  16% ] first_scan_filesystem | Loading global class names...
-[  33% ] first_scan_filesystem | Verifying GDExtensions...
-[  50% ] first_scan_filesystem | Creating autoload scripts...
-[  66% ] first_scan_filesystem | Initializing plugins...
-[  83% ] first_scan_filesystem | Starting file scan...
-[ DONE ] first_scan_filesystem
-
-[   0% ] update_scripts_classes | Started Registering global classes... (4 steps)
-[   0% ] update_scripts_classes | Bindings
-[  20% ] update_scripts_classes |
-[  40% ] update_scripts_classes |
-[  60% ] update_scripts_classes |
-[ DONE ] update_scripts_classes
-
-[   0% ] loading_editor_layout | Started Loading editor (5 steps)
-[   0% ] loading_editor_layout | Loading editor layout...
-[  16% ] loading_editor_layout | Loading docks...
-[  33% ] loading_editor_layout | Reopening scenes...
-[  50% ] loading_editor_layout | Loading central editor layout...
-[  66% ] loading_editor_layout | Loading plugin window layout...
-[  83% ] loading_editor_layout | Editor layout ready.
-[ DONE ] loading_editor_layout
-
-Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
-
-PASS: Worn internals inaccessible
-PASS: Worn external slots accessible
-PASS: Teammate cannot loot worn pack
-PASS: Worn pack supplies four quick slots
-PASS: Worn pack to hands
-PASS: Held pack opens internals, removes external hotbar
-PASS: Held pack to world
-PASS: Placed pack shared access
-PASS: World to held to worn cycle
-PASS: Pack content identity and water preserved
-PASS: Nested pack rejected
-PASS: First claimant takes item
-PASS: Second claimant rejected
-PASS: Duplicate request rejected
-PASS: Out-of-reach transfer rejected
-PASS: Full inventory rejects equip without loss
-PASS: Hydration transfers exactly 250 mL
-PASS: Repeat hydrate cannot consume water
-PASS: Actual canister attaches to stove
-PASS: Actual meal enters cooking slot
-PASS: No heat while stove off
-PASS: Stove ignites with fuel
-PASS: Burning stove cannot be packed
-PASS: Host advances fuel and cooking
-PASS: Extinguishing pauses accumulated cooking
-PASS: Meal cooked after ten seconds of burn
-PASS: Consumption removes one meal and changes hunger
-PASS: Fuel exhaustion shuts stove down
-PASS: Enter unrolled bag
-PASS: Occupancy exclusive and rolling blocked
-PASS: Disconnect releases occupancy
-PASS: Camping invariants
-PASS: Detached magazines consume actual loose rounds
-PASS: Timed reload starts
-PASS: Reload blocks firing
-PASS: Swap not committed before timer
-PASS: Reload picks fullest magazine and feeds empty chamber
-PASS: Tactical reload preserves chamber
-PASS: Old magazine keeps ID and rounds in vacated slot
-PASS: Explicit magazine removal
-PASS: Chambered gun with no magazine fires once
-PASS: Dry fire preserves ammunition
-PASS: Cycling creates recoverable round with conserved total
-PASS: Drop cancels reload without modifying ammo
-PASS: Transfer firearm to teammate preserves state
-PASS: Over-rate fire rejected
-PASS: Ammunition conserved across all operations including shots
-PASS: Firearm/inventory invariants
-PASS: Disconnect moves gun and magazine into recovery crate
-PASS: Reconnect receives empty loadout without copies
-PASS: Reset invalidates item epoch and timed actions
-PASS: Reset invariants
-PASS: Voice hooks have no capture and correct attenuation
-DOMAIN_RESULT checks=53 failures=0
-Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
-
-PASS: Player settles on arena floor
-PASS: Walking at 4.5 m/s
-PASS: Diagonal movement normalized
-PASS: Sprint at 7 m/s
-PASS: Water penalty applies and sprint disabled
-PASS: Brush penalty applies
-PASS: Rough ground penalty applies
-PASS: Low ceiling blocks uncrouch
-PASS: Jump creates upward velocity on ground
-PASS: Fall recovery preserves carried identity
-PASS: Level ground within reach accepts placement
-PASS: Empty forward space rejects placement
-PASS: Wall blocks reach
-PASS: Equipment panel opens with stable item selection
-PASS: Settings UI renders without script errors
-PASS: Scene integration maintains item invariants
-PHYSICS_RESULT checks=16 failures=0
-Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
-
-SETTINGS_RESULT passed: duplicates rejected; keyboard/mouse actions and sensitivity persist
---- host exit=0 ---
-Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
-
-LAB: Hiker joined: 1772117930
-LAB: Hiker joined: 1227936879
-LAB: Hiker joined: 1320954134
-LAB: Hiker 1772117930 left; equipment recovered
-LAB: Hiker 1227936879 left; equipment recovered
-LAB: Hiker 1320954134 left; equipment recovered
-SMOKE_RESULT peer=1 players=1 items=20 epoch=2 invariants=[] ammo=156
-PROBE_RESULT passed=true peak_players=4 cooking=true contents=true chamber=true contested_count=1 recovery=true epoch=2
-
---- client1 exit=0 ---
-Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
-
-LAB: Equip accepted
-LAB: Host-only sandbox control
-SMOKE_RESULT peer=1772117930 players=4 items=19 epoch=2 invariants=[] ammo=156
-PROBE_RESULT passed=true peak_players=4 cooking=true contents=true chamber=true contested_count=1 recovery=false epoch=2
-
---- client2 exit=0 ---
-Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
-
-LAB: Item inaccessible or out of reach
-LAB: Host-only sandbox control
-SMOKE_RESULT peer=1227936879 players=3 items=20 epoch=2 invariants=[] ammo=156
-PROBE_RESULT passed=true peak_players=4 cooking=true contents=true chamber=true contested_count=1 recovery=true epoch=2
-
---- late_client exit=0 ---
-Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
-
-LAB: Item inaccessible or out of reach
-LAB: Host-only sandbox control
-SMOKE_RESULT peer=1320954134 players=2 items=20 epoch=2 invariants=[] ammo=156
-PROBE_RESULT passed=true peak_players=4 cooking=true contents=true chamber=true contested_count=1 recovery=true epoch=2
-
---- fifth exit=2 ---
-Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
-
-LAB: Connection timed out / server may be full (4 players maximum)
-SMOKE_NOT_CONNECTED Connection timed out / server may be full (4 players maximum)
-
-NETWORK_RESULT passed: four connected processes; fifth rejected; snapshots and invariants checked
+PASS: Jolt selected
+PASS: generated objects expose native interaction prompts
+PASS: native controller settles onto ground
+PASS: native controller moves through real physics
+PASS: pack starts with three actual supply items
+PASS: native inventory accepts transferred water
+PASS: native inventory accepts transferred fuel
+PASS: native inventory accepts transferred meal
+PASS: hydration conserves 250 mL
+PASS: repeated hydration cannot spend water twice
+PASS: stove owns transferred resources
+PASS: settled stove ignites
+PASS: ten seconds cook meal and consume matching fuel
+PASS: burning stove blocks carrying
+PASS: burning stove rejects detach
+PASS: full inventory cannot lose socket item
+PASS: cooled stove returns both items
+PASS: fuel remaining preserved after detach
+PASS: pack wears
+PASS: worn pack is physically disabled
+PASS: pack sets down in clear space
+PASS: dropped pack restores collisions
+PASS: native carry component holds physical pack
+PASS: carried pack opens native inventory
+PASS: native carry releases pack
+PASS: round trip preserves supply identity and amount
+PASS: native weapon equips
+PASS: native weapon fires and spends ammunition
+PASS: native reload transfers reserve ammunition
+PASS: cooked meal can be eaten
+PASS: native container UI opens
+FOUNDATION_RESULT checks=31 failures=0
